@@ -1,0 +1,168 @@
+$colorText: #212529
+$colorReverse: #fff
+
+*
+        margin: 0
+        padding: 0
+a
+        text-decoration: none
+
+img
+        max-width: 100%
+
+
+
+body
+        font-family: 'Inter', sans-serif
+
+.center
+        padding-left: 16px
+        padding-right: 16px
+
+.text
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+        text-align: center
+        letter-spacing: -0.02em
+        color: $colorText
+
+      
+
+.button
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+        letter-spacing: -0.02em
+        color: #FFFFFF
+        background: #4F9CF9
+        border-radius: 8px
+        padding: 20px 40px
+        display: inline-block //не наезжает
+
+
+
+
+.info
+        padding-top: 80px
+        padding-bottom: 80px
+        background-image: url(img/bg-info.svg)
+        background-position: 0 38px
+        background-repeat: no-repeat
+        &__item
+                display: flex
+                flex-direction: column
+                gap: 60px
+                align-items: center
+                &:not(:last-child)
+                        margin-bottom: 100px
+        &__elem
+                text-align: center
+        &__heading
+                font-style: normal
+                font-weight: 700
+                font-size: 36px
+                line-height: 44px
+                letter-spacing: -0.02em
+                color: $colorText
+                background-repeat: no-repeat
+                position: relative
+        &__heading-img
+                position: absolute
+                left: 13%
+                top: 70px
+                z-index: -1
+                &_position
+                        top: 32px
+                        left: 30%
+        &__img-project
+                width: 561px
+        &__img-together
+                width: 454px
+             
+        &__text
+                margin-top: 24px
+                margin-bottom: 60px
+
+
+@media (min-width: 768px)
+
+        .center
+                padding-left: calc(50% - 728px / 2)
+                padding-right: calc(50% - 728px / 2)
+        .info
+                &__heading
+                        font-size: 54px
+                        line-height: 65px
+
+        
+@media (min-width: 1152px)
+
+        .center
+                padding-left: calc(50% - 1088px / 2)
+                padding-right: calc(50% - 1088px / 2)
+
+        .info
+                &__item 
+                        flex-direction: row
+                        justify-content: space-between
+                        &_reverse
+                                flex-direction: row-reverse
+                &__elem 
+                        width: 465px
+                        text-align: left
+
+                &__img-project,
+                &__img-together
+                        width: 50%
+                &__heading
+                        font-size: 64px
+                        line-height: 77px
+
+            
+                   
+@media (min-width: 1440px)
+
+        .center
+                padding-left: calc(50% - 1376px / 2)
+                padding-right: calc(50% - 1376px / 2)
+
+        .info 
+                &__elem
+                        width: 657px
+                &__img-project
+                        width: 719px
+                &__img-together
+                        width: 583px
+                &__heading
+                        font-size: 72px
+                        line-height: 87px
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1920px)
+
+        .center
+                padding-left: calc(50% - 1480px / 2)
+                padding-right: calc(50% - 1480px / 2)
+
+        .info 
+                &__elem
+                        width: 672px
+                &__img-project
+                        width: 748px
+                &__img-together
+                        width: 710px
+                &__heading
+                        font-size: 72px
+                        line-height: 87px
